@@ -1,0 +1,27 @@
+div.footer {
+
+	flex: 0 0 20%;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	color: #222831;
+	background-color: #ececec;
+}
+div.footer h1 {
+
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+div.footer a {
+
+	color: gray;
+}
+div.footer p {
+	margin-bottom: 1em;
+}
+div.social-media-icons span {
+
+	padding-right: .6em;
+	font-size: 110%;
+	color: black;
+}

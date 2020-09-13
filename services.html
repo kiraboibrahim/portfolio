@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Services</title>
+	<link rel="icon" type="image/png" href="images/developer.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<!--for body -->
+	 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+	 <!--fonts for only nav-->
+	<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+	<!--fonts for only logo-->
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<!-- Reset styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--My styles -->
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/desktopHeader.css">
+	<link rel="stylesheet" href="css/desktopIndexStyles.css">
+	<link rel="stylesheet" href="css/desktopFooter.css">
+	<script>
+		$(document).ready(function() {
+
+		}); //end ready
+	</script>
+	<style>
+		div.content {
+			margin-top: 6em;
+			display: flex;
+			flex-direction: column;
+		}
+
+		div.services {
+
+			height: 100%;
+			margin-bottom: 20px;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(5, 1fr);
+			grid-gap: 20px;
+
+		}
+		div.service {
+
+			display:grid;
+			grid-template-rows: 100%;
+			grid-template-columns: 1fr 5fr;
+			background-color: #ececec;
+			border-radius: 10px;
+			margin-left: 10em;
+			margin-right: 10em;
+			padding: 1em;
+		}
+		div.service h1 {
+
+			font-size: 120%;
+			color: #222831;
+		}
+
+		div.service:hover {
+
+			box-shadow: 1px 1px 4px #ececec;
+			cursor: pointer;
+		
+		}
+
+		div.service-image {
+
+		}
+
+		div.service-description {
+
+			border-left: 1px solid #ececec;
+			padding: 2em;
+			padding-top: .7em;
+		}
+
+		div.service-image img {
+
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+	
+	</style> 
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<h1>Kirabo <span class="title">Developer</span></h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#" class="active">SERVICES</a></li>
+				<li><a href="#">PROJECTS</a></li>
+				<li><a href="#">HIRE ME</a></li>
+				<li><a href="#">ABOUT ME</a></li>
+				<li><a href="#">CONTACT</a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="services">
+			<div class="service">
+				<div class="service-image">
+					<img src="images/web.jpg" alt="web development">
+				</div>
+
+				<div class="service-description">
+					<h1>Web Development</h1>
+					<p> I build all kinds of websites and working on 
+				</div>
+			</div>
+
+			<div class="service">
+				<div class="service-image">
+					<img src="images/scrapper.png" alt="web scrapping">
+
+				</div>
+				
+				<div class="service-description">
+
+				</div>
+			</div>
+
+			<div class="service">
+				<div class="service-image">
+					<img src="images/terminal.png" alt="command line applications">
+				</div>
+				
+				<div class="service-description">
+
+				</div>
+			</div>
+
+			<div class="service">
+				<div class="service-image">
+					<img src="images/app.png" alt="web application">
+				</div>
+				
+				<div class="service-description">
+
+				</div>
+			</div>
+
+			<div class="service">
+				<div class="service-image">
+					<img src="images/data.jpg" alt="data analysis">
+				</div>
+				
+				<div class="service-description">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="my-contacts">
+			<h1>Kirabo  Developer <span class="copyright">All rights reserved &copy; 2020</span></h1>
+			<div class="social-media-icons">
+				<a href="https://wa.link/0kd15n"><span class="fab fa-whatsapp"></span></a>
+				<a href="https://www.facebook.com/profile.php?id=100022546761567"><span class="fab fa-facebook"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+			</div>
+		</div>
+
+		<div class="useful-links">
+			<h1>Useful Links</h1>
+			<p><a href="#">Hire me</a></p>
+			<p> <a href="#">Projects</a></p>
+			<p><a href="#">Services</a></p>
+		</div>
+
+		<div class="privacy-policy">
+			<h1> Our privacy policy</h1>
+			<p><a href="terms.html">Terms and conditions</a></p>
+		</div>
+	</div>
+</body>
+</html>

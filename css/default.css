@@ -1,0 +1,41 @@
+/* My fonts */
+@font-face {
+
+	font-family: Dosis;
+	src: url(fonts/Dosis/static/Dosis-Regular.ttf);
+}
+@font-face {
+
+	font-family: FiraSans;
+	src: url(fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+/* reset some styles */
+body, html {
+
+	width: 100vw;
+	height: 100vh;
+	font-size: 100%;
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: rgb(255, 255, 255);
+	background-color: #222831;
+	/* create layout with flex */
+	display: flex;
+	flex-direction: column;
+}
+
+div.content {
+
+	flex: 1 0 auto;
+}
+
+
+a:link {
+
+	text-decoration: none;
+}
+
+
+
+		

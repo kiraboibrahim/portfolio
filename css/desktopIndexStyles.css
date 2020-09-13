@@ -1,0 +1,35 @@
+
+div.content {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.content h1 {
+
+	margin-bottom: .5em;
+	font-size: 350%;
+}
+
+div.content p.name {
+
+	margin-bottom: .6em;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+div.content p.title {
+
+	margin-bottom: 1em;
+	color: #f2a365;
+	font-size: 80%;
+}
+div.content button.action {
+
+	font-family: 'Syne', sans-serif;
+}
+		
+		
+		

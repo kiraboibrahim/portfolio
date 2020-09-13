@@ -1,0 +1,56 @@
+div.header {
+
+	flex: 0 0 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	background-color: #222831;
+} 
+
+div.logo {
+
+	flex: 0 0 20%;
+	margin-top: 1em;
+	padding-left: .5em;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div.logo span.title {
+
+	font-style: italic;
+}
+div.nav {
+
+	flex: 1 0 auto;
+	font-family: 'Syne', sans-serif;
+
+}
+
+div.nav ul {
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+div.nav ul li {
+
+	padding: 1em;
+}
+.nav a {
+
+	color: #bbe1fa;
+}
+.nav a:hover {
+	color: #bbe1fa;
+	text-decoration: underline;
+}
+
+a.active {
+
+	text-decoration: underline;
+}
