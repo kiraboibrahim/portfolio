@@ -24,11 +24,163 @@
 	<link rel="stylesheet" href="css/desktopFooter.css">
 	<script>
 		$(document).ready(function() {
+			//hide the reason input if one has a website
+			$(".reason").hide();
+			$("input#any-website").click(function () {
+
+				if ($(this).is(":checked")) {
+
+					$(".reason").slideDown();
+				}
+
+				else {
+
+					$(".reason").slideUp();
+				}
+			}); //end click
 
 		}); //end ready
 	</script>
+	<style>
+		div.content {
+
+			margin-left: 5em;
+			margin-right: 5em;
+
+		}
+
+
+		form {
+			width: 100%;
+			padding: 2em;
+			background-color: #fff;
+			margin-top: 5em;
+			margin-bottom: 1em;
+			
+		}
+
+		button.add {
+
+			float: right;
+			margin-top: 1em;
+		}
+
+		div.submit-parent {
+
+			text-align: right;
+			margin-top: 5em;
+		}
+
+		label {
+
+			margin-bottom: 1em;
+			color: #f2a365;
+		}
+
+		legend {
+
+			color: rgba(30, 40, 49, .5);
+			text-align: center;
+			margin-bottom: 1em;
+			font-weight: bold;
+		}
+
+	</style>
 </head>
 <body>
+	<div class="header">
+		<div class="logo">
+			<h1>Kirabo <span class="title">Developer</span></h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="services.html">SERVICES</a></li>
+				<li><a href="#">PROJECTS</a></li>
+				<li><a href="hireMe.html" class="active">HIRE ME</a></li>
+				<li><a href="#">ABOUT ME</a></li>
+				<li><a href="#">CONTACT</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<form action="#" method="post">
+			<legend>Please fill out this form to know the details of the service I am to offer. </legend>
+			<div class="form-group">
+				<label for="email">Client email:</label>
+				<input name="service" class="form-control" type="text" id="email" placeholder="Client's email"required>
+			</div>
+			<div class="form-group">
+				<label for="company-services">What does your business do?</label>
+				<input name="service" class="form-control" type="text" id="company-services" placeholder="Services, products you offer"required>
+			</div>
+			<!--div class="form-check">
+				<input class="form-check-input" id="any-website" type="checkbox">
+				<label class="form-check-label" for ="any-website">Do you have a website?</label>
+			</div-->
+			<div class="any-website">
+				<input name="website-exists" id="any-website" type="checkbox" required>
+				<label>Do you have a website?</label>
+			</div>
+
+			<!--If answer to the above is yes, then the client will provide reason for why he needs another website -->
+			<div class="form-group reason">
+				<label for="reason">Why do you dislike the website or need another website?</label>
+				<textarea name="reason" class="form-control" required placeholder="Reason"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="aim">Aim of the wesbsite:</label>
+				<input name="website-aim" type="text" id="aim" placeholder="Target of the website" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="audience">Target audience:</label>
+				<select name="audience" class="form-control">
+					<option value="0">Young</option>
+					<option value="1">Youth</option>
+					<option value="2">Old</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="unique">What makes  your Company unique?</label>
+				<textarea class="form-control" name="unique"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="competitors">Any Competitors:</label>
+				<input type="text" class="form-control" name="competitor" placeholder="Competitor name, link to their website">
+				<button class="btn btn-primary add" type="button">Add</button>
+			</div>
+
+			<div class="submit-parent">
+				<input type="submit" value="HIRE ME" class="btn btn-warning">
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="my-contacts">
+			<h1>Kirabo  Developer <span class="copyright">All rights reserved &copy; 2020</span></h1>
+			<div class="social-media-icons">
+				<a href="https://wa.link/0kd15n"><span class="fab fa-whatsapp"></span></a>
+				<a href="https://www.facebook.com/profile.php?id=100022546761567"><span class="fab fa-facebook"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+			</div>
+		</div>
+
+		<div class="useful-links">
+			<h1>Useful Links</h1>
+			<p><a href="#">Hire me</a></p>
+			<p> <a href="#">Projects</a></p>
+			<p><a href="#">Services</a></p>
+		</div>
+
+		<div class="privacy-policy">
+			<h1> Our privacy policy</h1>
+			<p><a href="terms.html">Terms and conditions</a></p>
+		</div>
+	</div>
 
 </body>
 </html>
