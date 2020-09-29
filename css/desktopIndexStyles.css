@@ -10,14 +10,13 @@ div.content {
 div.content h1 {
 
 	margin-bottom: .5em;
-	font-size: 350%;
+	font-size: 500%;
 }
 
 div.content p.name {
 
 	margin-bottom: .6em;
-	font-size: 110%;
-	font-weight: bold;
+	font-size: 150%;
 }
 
 div.content p.title {
