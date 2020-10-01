@@ -1,38 +1,64 @@
 
 div.content {
-
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 
-div.content h1 {
-
-	margin-bottom: .5em;
-	font-size: 500%;
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Baloo Tammudu 2', cursive;
+	padding: 2em;
+}
+.wrapper1 {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gird-template-rows: 100%;
+}
+.action-message  {
+	padding: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.action-message p {
+	font-size: 18px;
+	color: black;
+	line-height: 25px;
+}
+.developer-img {
+	padding-right: 1em;
 }
 
-div.content p.name {
-
-	margin-bottom: .6em;
-	font-size: 150%;
+.developer-img img {
+	width: 310px;
+	height:350px;
+	border-radius: 50%;
 }
 
-div.content p.title {
-
-	margin-bottom: 1em;
-	color: #f2a365;
-	font-size: 80%;
-}
-div.content button.action {
+button.action {
 
 	font-family: 'Syne', sans-serif;
+	margin-top: 2em;
+	float: right;
 }
 
 button a {
 
 	color: black;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.skill {
+	color: #b55400;
 }
 		
 		
