@@ -1,26 +1,27 @@
 div.footer {
-
+	/*The footer takes 20% of the viewport width */
 	flex: 0 0 20%;
 	display: flex;
 	justify-content: space-between;
 	padding: 1em;
 	color: #222831;
+	/* Background color gray */
 	background-color: #ececec;
 }
 div.footer h1 {
-
+	/* Headings in the footer section */
 	font-weight: bold;
 	margin-bottom: .2em;
 }
 div.footer a {
-
+	/* Color of links in the footer */
 	color: gray;
 }
 div.footer p {
 	margin-bottom: 1em;
 }
 div.social-media-icons span {
-
+	/* Create some spacing in the social media icons */
 	padding-right: .6em;
 	font-size: 110%;
 	color: black;
