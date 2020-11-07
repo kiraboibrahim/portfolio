@@ -11,15 +11,16 @@
 }
 /* reset some styles */
 body, html {
-
+	/* Body should take 100% of the viewport width */
 	width: 100vw;
 	height: 100vh;
-	font-size: 100%;
+	font-size: 100%; /* All fonts relative to the body */
 	font-family: 'PT Sans', sans-serif;
+	/* Fully occupy the whole viewport (browser window) */
 	margin: 0;
 	padding: 0;
 	color: rgb(255, 255, 255);
-	background-color: #222831;
+	background-color: #fff;
 	/* create layout with flex */
 	display: flex;
 	flex-direction: column;

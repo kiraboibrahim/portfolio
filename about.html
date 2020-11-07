@@ -26,14 +26,57 @@
 		<style>
 			.content {
 				font-family: 'Baloo Tammudu 2', cursive;
-				width: 100vw;
-				height: 100vh;
 				background-color: #fff;
+				color: #222831;
+				font-size: 110%;
+				/* Layout */
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.wrapper {
+				flex: 1 0 auto;
+			}
+			img {
+				width: 300px;
+				height: 300px;
+			}
+			#bio, #education, #skills {
+				display: none;
+			}
+			.my-info {
+				line-height: 2em;
+				margin-left: 5em;
+				margin-right: 5em;
+			}
+			.button:hover {
+				cursor: pointer;
+			}
+			.hide {
+				display: none;
+			}
+			strong {
+				color: #b55400;
+				font-weight: bold;
+			}
+			b {
+				font-weight: bold;
 			}
 		</style>
+		<script>
+			$(document).ready(function() {
+
+				$(".button").click(function () {
+					$($(this).attr("data-target")).stop().slideToggle();
+					$(this).children(".show").fadeToggle("fast").css("display", "inline-block");
+					$(this).children(".hide").fadeToggle("fast").css("display", "inline-block");
+				})
+			});
+		</script>
 	</head>
 	
 	<body>
+		
 		<div class="header">
 			<div class="logo">
 				<h1>Kirabo <span class="title">Developer</span></h1>
@@ -46,12 +89,59 @@
 					<li><a href="hireMe.html">HIRE ME</a></li>
 					<li><a href="#" class="active">ABOUT ME</a></li>
 					<li><a href="#">CONTACT</a></li>
-
 				</ul>
 			</div>
 		</div>
-		<div class="content">
-			<p style="color: blue;">This is Kirabo Ibrahim Portfolio</p>
+		<div class="content px-md-5 mb-5"> 
+			<div class="d-flex justify-content-center mt-5 mb-4">
+				<img class="img-responsive rounded-circle" src="images/owner0.jpg" alt="Kirabo Ibrahim">
+			</div>
+
+			<div class="wrapper">
+
+				<div class="my-info">
+					<p>Iam by the name <strong>Kirabo Ibrahim</strong>, an enthusiast and practicioner of Software Development and a <strong>self taught programmer</strong>.</p>
+					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#bio">
+
+						<span class="fas fa-plus pr-2 text-warning show" ></span> 
+						<span class="fas fa-minus pr-2 text-warning hide" ></span>
+
+						<span class="text-white">BIOGRAPHY</span>
+					</div>
+					<div id="bio" class="pl-md-3 p-2">
+						<p>Having had many queries about how computer games were made, I decided to take on path that could lead me in to the game industry, and unluckily enough and luckily enough, my first programming language was python.</p>
+						<p>I was interested in <strong>3D game development</strong>, but I remember the popular pygame package in python which was used to develop 2D games.</p>
+						<p>So I decided stray off that path but after learning python from zero to developing GUI appliactions.</p>
+						<p> I became a language normad till I realized that my dream of <strong>web development</strong>.</p>
+						<p class="font-weight-bold">And here Iam.</p>
+					</div> 
+
+					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#education">
+
+						<span class="fas fa-plus pr-2 text-warning show" ></span> 
+						<span class="fas fa-minus pr-2 text-warning hide" ></span>
+
+						<span class="text-white">EDUCATION</span>
+					</div>
+					<div id="education" class="pl-md-3 p-2">
+						<p><b>PRIMARY</b>: Kabalagala Parents' School, King Fahad -Busega</p>
+						<p><b>HIGH SCHOOL</b>: Kibuli Secondary School</p>
+						<p><b>UNIVERSITY</b>: Makerere University <span class="badge badge-pill badge-warning pt-2">Ongoing till 2024</span></p>
+
+					</div>
+					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#skills">
+
+						<span class="fas fa-plus pr-2 text-warning show" ></span> 
+						<span class="fas fa-minus pr-2 text-warning hide" ></span>
+						<span class="text-white">SKILLS</span>
+					</div>
+					<div id="skills" class="pl-md-3 p-2">
+						<p>Languages: <strong>Python</strong>,  <strong>PHP</strong>,  <strong>SQL</strong>,  <strong>CSS</strong>,  <strong>HTML</strong>,  <strong>JAVASCRIPT</strong>.</p>
+						<p>Career fields:  <strong>Data science</strong>,  <strong>Full Stack web development (LAMP, Python stack)</strong></p>
+					</div>
+
+				</div>
+			</div>
 		</div>
 		<div class="footer">
 			<div class="my-contacts">

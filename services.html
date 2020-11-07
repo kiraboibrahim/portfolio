@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Services</title>
 	<link rel="icon" type="image/png" href="images/developer.png">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
@@ -29,7 +29,6 @@
 	</script>
 	<style>
 		div.content {
-			margin-top: 6em;
 			display: flex;
 			flex-direction: column;
 			background-color: white;
@@ -45,19 +44,34 @@
 			grid-template-rows: repeat(5, 1fr);
 			grid-gap: 20px;
 			font-family: 'Baloo Tammudu 2', cursive;
+			padding: 1em;
 
 		}
-		div.service {
+		/* For smaller screen and margins are zero */
+		@media screen and (min-width: 100px) and (max-width: 900px) {
+			div.service {
 
-			display:grid;
-			grid-template-rows: 100%;
-			grid-template-columns: 2fr 5fr;
-			border: 1px solid #ececec;
-			border-radius: 5px;
-			margin-left: 10em;
-			margin-right: 10em;
-			box-shadow: 0 0 4px #ececec;
+				display: grid;
+				grid-template-rows: 100%;
+				grid-template-columns: 2fr 5fr;
+				border: 1px solid #ececec;
+				border-radius: 5px;
+				margin: 0;
+				box-shadow: 0 0 4px #ececec;
 			
+			}
+		}
+		@media screen and (min-width: 900px) {
+			div.service {
+				display:grid;
+				grid-template-rows: 100%;
+				grid-template-columns: 2fr 5fr;
+				border: 1px solid #ececec;
+				border-radius: 5px;
+				margin-left: 10em;
+				margin-right: 10em;
+				box-shadow: 0 0 4px #ececec;
+			}
 		}
 		div.service h1 {
 
@@ -118,7 +132,7 @@
 				<li><a href="#" class="active">SERVICES</a></li>
 				<li><a href="#">PROJECTS</a></li>
 				<li><a href="hireMe.html">HIRE ME</a></li>
-				<li><a href="#">ABOUT ME</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
 				<li><a href="#">CONTACT</a></li>
 
 			</ul>
