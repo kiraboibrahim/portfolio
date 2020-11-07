@@ -24,11 +24,33 @@
 		<link rel="stylesheet" href="css/desktopHeader.css">
 		<link rel="stylesheet" href="css/desktopFooter.css">
 		<style>
+			/* Mobile */
+			@media screen and (min-width: 100px) and (max-width: 800px)  {
+				.content {
+					font-size: 16px;
+				}
+				.button {
+					margin-left: 1em;
+					margin-right: 1em;
+				}
+				p.intro {
+					margin-left: 1em;
+					margin-right: 1em;
+				}
+			}
+			@media screen and (min-width: 800px) {
+				.content {
+					font-size: 18px;
+				}
+				.my-info {
+					margin-left: 5em;
+					margin-right: 5em;
+				}
+			}
 			.content {
 				font-family: 'Baloo Tammudu 2', cursive;
 				background-color: #fff;
 				color: #222831;
-				font-size: 110%;
 				/* Layout */
 				display: flex;
 				flex-direction: column;
@@ -46,12 +68,6 @@
 			}
 			.my-info {
 				line-height: 2em;
-			}
-			@media screen and (min-width: 900px) {
-				.my-info {
-					margin-left: 5em;
-					margin-right: 5em;
-				}
 			}
 			.button:hover {
 				cursor: pointer;
@@ -109,15 +125,15 @@
 			<div class="wrapper">
 
 				<div class="my-info">
-					<p>Iam by the name <strong>Kirabo Ibrahim</strong>, an enthusiast and practicioner of Software Development and a <strong>self taught programmer</strong>.</p>
-					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#bio">
+					<p class="intro">Iam by the name <strong>Kirabo Ibrahim</strong>, an enthusiast and practicioner of Software Development and a <strong>self taught programmer</strong>.</p>
+					<div class="bg-dark rounded  px-2 pt-2 button my-2" data-target="#bio">
 
 						<span class="fas fa-plus pr-2 text-warning show" ></span> 
 						<span class="fas fa-minus pr-2 text-warning hide" ></span>
 
 						<span class="text-white">BIOGRAPHY</span>
 					</div>
-					<div id="bio" class="pl-md-3 p-2">
+					<div id="bio" class="pl-md-3 p-4">
 						<p>Having had many queries about how computer games were made, I decided to take on path that could lead me in to the game industry, and unluckily enough and luckily enough, my first programming language was python.</p>
 						<p>I was interested in <strong>3D game development</strong>, but I remember the popular pygame package in python which was used to develop 2D games.</p>
 						<p>So I decided stray off that path but after learning python from zero to developing GUI appliactions.</p>
@@ -125,7 +141,7 @@
 						<p class="font-weight-bold">And here Iam.</p>
 					</div> 
 
-					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#education">
+					<div class="bg-dark rounded px-2 pt-2 button my-2" data-target="#education">
 
 						<span class="fas fa-plus pr-2 text-warning show" ></span> 
 						<span class="fas fa-minus pr-2 text-warning hide" ></span>
@@ -138,7 +154,7 @@
 						<p><b>UNIVERSITY</b>: Makerere University <span class="badge badge-pill badge-warning pt-2">Ongoing till 2024</span></p>
 
 					</div>
-					<div class="w-100 bg-dark rounded px-2 pt-2 button my-2" data-target="#skills">
+					<div class="bg-dark rounded  px-2 pt-2 button my-2" data-target="#skills">
 
 						<span class="fas fa-plus pr-2 text-warning show" ></span> 
 						<span class="fas fa-minus pr-2 text-warning hide" ></span>
