@@ -57,9 +57,10 @@
 	</script>
 	<style>
 
-		div.content {
+		div.container-fluid {
 			
 			background-color: #fff;
+			flex: 1 0 auto;
 
 		}
 
@@ -110,7 +111,17 @@
 			color: #222831;
 			margin-top: 2em;
 		}
-
+		/* Mobile */
+		@media screen and (min-width: 100px) and (max-width: 800px)  {
+			.general-details, .project-details {
+				padding: 0;
+				width: 100vw;
+			}
+			form {
+				padding: 0;
+				margin: 0;
+			}
+		}
 		.general-details, .project-details {
 
 			border: 1px solid #ececec;
@@ -161,23 +172,26 @@
 	</style>
 </head>
 <body>
-	<div class="header">
-		<div class="logo">
+	<nav class="navbar navbar-expand-lg nav-dark bg-dark" id="navbar">
+		<div class="logo navbar-brand"> 
 			<h1>Kirabo <span class="title">Developer</span></h1>
 		</div>
-		<div class="nav">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="services.html">SERVICES</a></li>
-				<li><a href="#">PROJECTS</a></li>
-				<li><a href="hireMe.html" class="active">HIRE ME</a></li>
-				<li><a href="about.html">ABOUT ME</a></li>
-				<li><a href="#">CONTACT</a></li>
+		<button class="navbar-toggler pt-3" type="button" data-toggle="collapse" data-target="#mynav" aria-label="Toggle Navigation" aria-controls="mynav">
+			<span class="navbar-toggler-icon fas fa-bars text-white"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="mynav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+				<li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
+				<li class="nav-item"><a href="hireMe.html" class="nav-link active">HIRE ME</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">ABOUT ME</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
 
 			</ul>
 		</div>
-	</div>
-	<div class="content">
+	</nav>
+	<div class="container-fluid">
 		<div class="message">
 			<div class="overlay">
 				<div>
@@ -191,7 +205,7 @@
 			<h1>QUESTIONAIRE<h1>
 		</header>
 		
-		<form action="#" method="post">
+		<form action="#" method="post" class="p-sm-1 p-md-2">
 			<div class="general-details">
 				<header>PERSONAL DETAILS</header>
 				<div class="form-group">

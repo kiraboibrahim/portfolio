@@ -122,22 +122,25 @@
 	</style> 
 </head>
 <body>
-	<div class="header">
-		<div class="logo">
+	<nav class="navbar navbar-expand-lg nav-dark bg-dark" id="navbar">
+		<div class="logo navbar-brand"> 
 			<h1>Kirabo <span class="title">Developer</span></h1>
 		</div>
-		<div class="nav">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="#" class="active">SERVICES</a></li>
-				<li><a href="#">PROJECTS</a></li>
-				<li><a href="hireMe.html">HIRE ME</a></li>
-				<li><a href="about.html">ABOUT ME</a></li>
-				<li><a href="#">CONTACT</a></li>
+		<button class="navbar-toggler pt-3" type="button" data-toggle="collapse" data-target="#mynav" aria-label="Toggle Navigation" aria-controls="mynav">
+			<span class="navbar-toggler-icon fas fa-bars text-white"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="mynav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+				<li class="nav-item"><a href="services.html" class="nav-link active">SERVICES</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
+				<li class="nav-item"><a href="hireMe.html" class="nav-link">HIRE ME</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">ABOUT ME</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
 
 			</ul>
 		</div>
-	</div>
+	</nav>
 
 	<div class="content">
 		<div class="services">

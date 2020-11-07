@@ -8,20 +8,40 @@ div.content {
 	justify-content: center;
 }
 
-.container {
+.container-fluid {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Baloo Tammudu 2', cursive;
 	padding: 2em;
 }
-.wrapper1 {
-	display: grid;
-	grid-template-columns: 1fr auto;
-	gird-template-rows: 100%;
+@media screen and (min-width: 800px) {
+	.wrapper1 {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gird-template-rows: 100%;
+	}
+	.developer-img img {
+		width: 310px;
+		height:350px;
+	}
+	.action-message  {
+		padding: 2em;
+	}
+}
+/* For mobile */
+@media screen and (min-width: 100px) and (max-width: 800px)  {
+	.developer-img img {
+		width: 40%;
+		height: 50%;
+	}
+	.developer-img {
+		display: flex;
+		justify-content: center;
+	}
 }
 .action-message  {
-	padding: 2em;
+	padding: .5em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,8 +56,6 @@ div.content {
 }
 
 .developer-img img {
-	width: 310px;
-	height:350px;
 	border-radius: 50%;
 }
 
