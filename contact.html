@@ -27,11 +27,12 @@
 	<style>
 		/* The wrapper for the whole screen, the user first sees this */
 		div.wrapper {
-			flex: 1 0 100%;
+			flex: 0 0 auto;
 			width: 100vw;
 			height: 100vh;
+			margin-bottom: 2em;
 			background-image: url(images/contact.jpg);
-			background-size: 100% 100%;
+			background-size: cover;
 		}
 		/* Apply the transparent effect */
 		div.overlay {
@@ -40,16 +41,16 @@
 			background-color: rgba(34, 40, 49, .8);
 			position: relative;
 		}
-		@media screen and (min-width: 100px) and (max-width: 600px) {
+		@media screen and (min-width: 100px) and (max-width: 700px) {
 			div.overlay h1 {
-				font-size: 200%;
+				font-size: 250%;
 			}
 			div.overlay p {
 				margin-top: 1em;
-				font-size: 100%;
+				font-size: 110%;
 			}
 		}
-		@media screen and (min-width: 600px) {
+		@media screen and (min-width: 700px) {
 			/* Increase the font size to show the role of the page */
 			div.overlay h1 {
 				font-size: 400%;
@@ -60,7 +61,7 @@
 				font-size: 250%;
 			}
 		}
-		form h1 {
+		div#form-parent h1 {
 			font-size: 17px;
 			text-decoration: underline;
 		}
@@ -104,16 +105,16 @@
 		</div>
 	</nav>
 	<!--End of bootstrap navigation bar -->
-	<div class="wrapper mb-5">
+	<div class="wrapper">
 		<div class="overlay d-flex flex-column justify-content-center align-items-center">
 			<h1 class="text-white font-weight-bold">HOW CAN I HELP?</h1>
 			<p class="text-white">Send me a message</p>
 			<a href="#" id="goto" class="fas fa-arrow-circle-down position-absolute text-warning" style="bottom: 6%; left: 50%; font-size: 350%;"></a>
 		</div>
 	</div>
-	<div id="form-parent" class="container d-flex flex-column justify-content-center" style="flex: 1 0 auto; height: 100vh;">
-		<form class="w-100 mb-5" method="post">
-			<h1 class="text-dark mb-5 font-weight-bold"> LEAVE ME A MESSAGE </h1>
+	<div id="form-parent" class="container d-flex flex-column justify-content-center mb-5" style="flex: 1 0 auto; height: 100vh;">
+		<h1 class="text-dark mt-5 mb-5 font-weight-bold"> LEAVE ME A MESSAGE </h1>
+		<form class="w-100" method="post">
 			<div class="w-100 d-md-flex name-container">
 				<div class="form-group mr-md-3 first-name-container">
 					<label for="firstName" class="font-weight-bold text-dark">First Name</label>
