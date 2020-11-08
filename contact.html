@@ -1,10 +1,153 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title> Contact</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<!--for body -->
+	 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"> 
+	 <!--fonts for only nav-->
+	<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+	<!--fonts for only logo-->
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<!-- Reset styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/desktopHeader.css">
+	<link rel="stylesheet" href="css/desktopFooter.css">
+	<!--Page styles-->
+	<style>
+		/* The wrapper for the whole screen, the user first sees this */
+		div.wrapper {
+			flex: 1 0 100%;
+			width: 100vw;
+			height: 100vh;
+			background-image: url(images/contact.jpg);
+			background-size: 100% 100%;
+		}
+		/* Apply the transparent effect */
+		div.overlay {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(34, 40, 49, .8);
+			position: relative;
+		}
+		/* Increase the font size to show the role of the page */
+		div.overlay h1 {
+			font-size: 400%;
+		}
+		/* Add some spacing */
+		div.overlay p {
+			margin-top: 1em;
+			font-size: 250%;
+		}
+		form h1 {
+			font-size: 17px;
+			text-decoration: underline;
+		}
+		div.first-name-container, div.last-name-container {
+			flex: 1 0 auto;
+		}
+		label {
+			margin-bottom:  .5em !important;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			let position = $("#form-parent").offset();
+			$("a#goto").click(function (event) {
+				event.preventDefault();
+				window.scrollTo(position.left, position.top);
+
+			}); //end click
+		}); //end ready
+	</script>
 </head>
 <body>
+	<!--Bootstrap navigation -->
+	<nav class="navbar navbar-expand-lg nav-dark bg-dark" id="navbar">
+		<div class="logo navbar-brand"> 
+			<h1>Kirabo <span class="title">Developer</span></h1>
+		</div>
+		<button class="navbar-toggler pt-3" type="button" data-toggle="collapse" data-target="#mynav" aria-label="Toggle Navigation" aria-controls="mynav">
+			<span class="navbar-toggler-icon fas fa-bars text-white"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="mynav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+				<li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
+				<li class="nav-item"><a href="hireMe.html" class="nav-link">HIRE ME</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">ABOUT ME</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link active">CONTACT</a></li>
 
+			</ul>
+		</div>
+	</nav>
+	<!--End of bootstrap navigation bar -->
+	<div class="wrapper mb-5">
+		<div class="overlay d-flex flex-column justify-content-center align-items-center">
+			<h1 class="text-white font-weight-bold">HOW CAN I HELP?</h1>
+			<p class="text-white">Send me a message</p>
+			<a href="#" id="goto" class="fas fa-arrow-circle-down position-absolute text-warning" style="bottom: 6%; left: 50%; font-size: 350%;"></a>
+		</div>
+	</div>
+	<div id="form-parent" class="container d-flex flex-column justify-content-center" style="flex: 1 0 auto; height: 100vh;">
+		<form class="w-100 mb-5" method="post">
+			<h1 class="text-dark mb-5 font-weight-bold"> LEAVE ME A MESSAGE </h1>
+			<div class="w-100 d-md-flex name-container">
+				<div class="form-group mr-md-3 first-name-container">
+					<label for="firstName" class="font-weight-bold text-dark">First Name</label>
+					<input class="form-control p-4" name="firstName" type="text" required>
+				</div>
+				<div class="form-group last-name-container">
+					<label for="lastName" class="font-weight-bold text-dark">Last Name</label>
+					<input class="form-control p-4" name="lastName" type="text" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="font-weight-bold text-dark">Email</label>
+				<input class="form-control p-4" type="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="message" class="font-weight-bold text-dark">Message</label>
+				<textarea class="form-control p-4" type="text" name="message" required></textarea>
+			</div>
+			<div class="form-group">
+				<input class="btn btn-warning form-control text-white font-weight-bold" type="submit" value="SEND MESSAGE">
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="my-contacts">
+			<h1>Kirabo  Developer <span class="copyright">All rights reserved &copy; 2020</span></h1>
+			<div class="social-media-icons">
+				<a href="https://wa.link/0kd15n"><span class="fab fa-whatsapp"></span></a>
+				<a href="https://www.facebook.com/profile.php?id=100022546761567"><span class="fab fa-facebook"></span></a>
+				<a href="#"><span class="fab fa-instagram"></span></a>
+				<a href="#"><span class="fab fa-twitter"></span></a>
+			</div>
+		</div>
+
+		<div class="useful-links">
+			<h1>Useful Links</h1>
+			<p><a href="#">Hire me</a></p>
+			<p> <a href="#">Projects</a></p>
+			<p><a href="#">Services</a></p>
+		</div>
+
+		<div class="privacy-policy">
+			<h1> Our privacy policy</h1>
+			<p><a href="terms.html">Terms and conditions</a></p>
+		</div>
+	</div>
 </body>
 </html>

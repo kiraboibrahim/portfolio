@@ -38,6 +38,7 @@
 					margin-right: 1em;
 				}
 			}
+			/* 	LARGER SCREENS GREATER THAN 800PX */
 			@media screen and (min-width: 800px) {
 				.content {
 					font-size: 18px;
@@ -47,6 +48,7 @@
 					margin-right: 5em;
 				}
 			}
+			/* Content holder */
 			.content {
 				font-family: 'Baloo Tammudu 2', cursive;
 				background-color: #fff;
@@ -56,29 +58,37 @@
 				flex-direction: column;
 				justify-content: center;
 			}
+			/* For centering content on page */
 			.wrapper {
 				flex: 1 0 auto;
 			}
+			/* Image to be 300 x 300 irespective of screen size */
 			img {
 				width: 300px;
 				height: 300px;
 			}
+			/* Sections that talk about the developer */
 			#bio, #education, #skills {
 				display: none;
 			}
+			/* All the information like name, biography, skills is all contained in this element */
 			.my-info {
 				line-height: 2em;
 			}
+			/* buttons that are used to display and hide and the information */
 			.button:hover {
 				cursor: pointer;
 			}
+			/* By default the hide element is hidden, so the page is loaded with the default show (+) button */ 
 			.hide {
 				display: none;
 			}
+			/* Words that portray great importance will be warapped in this tag */
 			strong {
 				color: #b55400;
 				font-weight: bold;
 			}
+			/* The reset css prevents bolding by the <b> tag */
 			b {
 				font-weight: bold;
 			}
@@ -87,7 +97,9 @@
 			$(document).ready(function() {
 
 				$(".button").click(function () {
+					//Show information attached to the button
 					$($(this).attr("data-target")).stop().slideToggle();
+					//Toogle the display of the plus and minus icons
 					$(this).children(".show").fadeToggle("fast").css("display", "inline-block");
 					$(this).children(".hide").fadeToggle("fast").css("display", "inline-block");
 				})
@@ -96,7 +108,7 @@
 	</head>
 	
 	<body>
-		
+		<!--Bootstrap 4 navigation -->
 		<nav class="navbar navbar-expand-lg nav-dark bg-dark" id="navbar">
 		<div class="logo navbar-brand"> 
 			<h1>Kirabo <span class="title">Developer</span></h1>
@@ -111,7 +123,7 @@
 				<li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
 				<li class="nav-item"><a href="hireMe.html" class="nav-link">HIRE ME</a></li>
 				<li class="nav-item"><a href="about.html" class="nav-link active">ABOUT ME</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
 
 			</ul>
 		</div>

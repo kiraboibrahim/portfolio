@@ -63,7 +63,7 @@
 			flex: 1 0 auto;
 
 		}
-
+		/* The role of the page Occupies the whole browser width and height*/
 		.message {
 			color: black;
 			width: 100vw;
@@ -74,8 +74,8 @@
 			background-color: #000;
 			
 		}
+		/* The transparency effect */
 		.overlay {
-
 			width: 100vw;
 			height: 100%;
 			background-color: rgba(255, 255, 255, .6);
@@ -87,7 +87,7 @@
 			font-family: 'Baloo Tammudu 2', cursive;
 		}
 	
-
+		/* Add some spacing to prevent cluttering on the sides of the browser: For only screens greater than 800px; */
 		form {
 
 			padding: 2em;
@@ -98,16 +98,18 @@
 			font-family: 'Baloo Tammudu 2', cursive;
 
 		}
-		/* Mobile */
+		/* Mobile: ie btn 100px and 800px*/
 		@media screen and (min-width: 100px) and (max-width: 800px)  {
 			.general-details, .project-details {
 				padding: 0;
 			}
 			form {
+				/* Remove padding in order for the form to completely occupy the whole width for screens btn  100px and  800px*/
 				padding: 0;
 				margin: 0;
 			}
 		}
+		/* These are the containers for personal questions and project details respectively */
 		.general-details, .project-details {
 
 			border: 1px solid #ececec;
@@ -116,6 +118,7 @@
 			border-radius: 5px;
 			margin-bottom: 1em;
 		}
+		/* These are the headings that describe what each section is all about */
 		.general-details header, .project-details header {
 
 			font-size: 85%;
@@ -123,18 +126,18 @@
 			margin-bottom: 1em;
 			font-weight: bold;
 		}
-
+		/* The submit button is contained in an element in order to align it to the right */
 		div.submit-parent {
 
 			text-align: right;
 			margin-top: 5em;
 		}
-
-		div.submit-parent input {
+		/* The submit is given a rounded border */
+		div.submit-parent input[type=submit] {
 
 			border-radius: 40px;
 		}
-
+		/* Description for the form fields */
 		label {
 
 			margin-bottom: 1em;
@@ -147,6 +150,7 @@
 			/*border-radius: 40px;*/
 			padding: 1.3em;
 		}
+		/* They direct the user what each field should contain */
 		form p.explanation  {
 
 			color: rgba(30, 40, 49, .5);
@@ -172,7 +176,7 @@
 				<li class="nav-item"><a href="#" class="nav-link">PROJECTS</a></li>
 				<li class="nav-item"><a href="hireMe.html" class="nav-link active">HIRE ME</a></li>
 				<li class="nav-item"><a href="about.html" class="nav-link">ABOUT ME</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
 
 			</ul>
 		</div>
