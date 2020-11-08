@@ -40,14 +40,25 @@
 			background-color: rgba(34, 40, 49, .8);
 			position: relative;
 		}
-		/* Increase the font size to show the role of the page */
-		div.overlay h1 {
-			font-size: 400%;
+		@media screen and (min-width: 100px) and (max-width: 600px) {
+			div.overlay h1 {
+				font-size: 200%;
+			}
+			div.overlay p {
+				margin-top: 1em;
+				font-size: 100%;
+			}
 		}
-		/* Add some spacing */
-		div.overlay p {
-			margin-top: 1em;
-			font-size: 250%;
+		@media screen and (min-width: 600px) {
+			/* Increase the font size to show the role of the page */
+			div.overlay h1 {
+				font-size: 400%;
+			}
+			/* Add some spacing */
+			div.overlay p {
+				margin-top: 1em;
+				font-size: 250%;
+			}
 		}
 		form h1 {
 			font-size: 17px;
