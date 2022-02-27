@@ -29,8 +29,8 @@
 					<p class="intro__name">KIRABO IBRAHIM</p>
 					<p class="intro__career badge badge-warning">Full Stack Developer</p>
 					<div class="intro__social-icons">
-						<a href="https://www.linkedin.com/in/kirabo-ibrahim-b141121b5"><i class="fa-brands fa-github intro__social-icon intro__linkedin-icon"></i></a>
-						<a href="https://github.com/kiraboibrahim"><i class="fa-brands fa-linkedin intro__social-icon intro__github-icon"></i></a>
+						<a href="https://www.linkedin.com/in/kirabo-ibrahim-b141121b5" target="_blank"><i class="fa-brands fa-github intro__social-icon intro__linkedin-icon"></i></a>
+						<a href="https://github.com/kiraboibrahim" target="_blank"><i class="fa-brands fa-linkedin intro__social-icon intro__github-icon"></i></a>
 					</div>
 				</div>
 		</article>
@@ -59,21 +59,78 @@
 		</div>
 	</article>
 
-	<article>
+	<article class="skills">
 		<header>
-			<h1>SKILLS</h1>
+			<h1 class="skills__title">SKILLS</h1>
 		</header>
-		<div>
+		<div class="skills__body">
+			<img class="skill" src="https://img.shields.io/badge/Atom-%2366595C.svg?style=for-the-badge&logo=atom&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/Emacs-%237F5AB6.svg?&style=for-the-badge&logo=gnu-emacs&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+			<img class="skill" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray">
+			<img class="skill" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+			<img class="skill" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
 		</div>
 	</article>
 
-	<article>
+	<article class="projects">
 		<header>
-			<h1> </h1>
+			<h1 class="projects__title">PROJECTS</h1>
 		</header>
-		<div>
+		<div class="projects__body">
+			<article class="projects__project-card">
+				<header>
+					<h1 class="projects__project-card-title"> ANASHEED (Jan/2022 - Feb/2022)</h1>
+				</header>
+				<div class="projects__project-card-body">
+					<p>Music is such a sensitive topic in the Islamic religion, but amidst all the mist around this topic,
+					I decided to contribute to my religion through developing a service that allows sharing and streaming
+					of anasheed music (special type of music). I divided the whole development into <em>frontend</em> and <em>backend</em>.</p>
+					<p>The frontend is hosted on gihub pages and the backend on pythonanywhere.com. As a source of data
+					for the backend, I used scrapping to obtain information as I didn't find any available API to provide such
+					kind of data.</p>
+					<p>I designed ANASHEED as a <em>Progressive Web App (PWA)</em> in order to allow a frictionless access to the entertainment.</p>
+				</div>
+				<div class="projects__project-card-footer">
+					<a href="https://kiraboibrahim.github.io/anasheed-frontend" class="btn btn-warning mt-4 badge-pill" target="project">VISIT ANASHEED</a>
+				</div>
+			</article>
+
+			<article class="projects__project-card">
+				<header>
+					<h1 class="projects__project-card-title"> KIRABOFLIX (March/2021 - May/2021)</h1>
+				</header>
+				<div class="projects__project-card-body">
+					<p>Looking at the various movie streaming service alternatives out there, I decided to create a
+					platform that could provide movie streaming services but never required signups (increased privacy),
+					no ads and no subscriptions.</p>
+
+					<p>I began on this epic journey in 2021, and along the timeline, I faced lots of challenges and one of
+					the main challenges was copyright infringement. As a work around, I decided to use torrent movies. The
+					application is fully responsive and it has a user friendly user interface.</p>
+				</div>
+				<div class="projects__project-card-footer">
+					<a href="https://kiraboflix.pythonanywhere.com" class="btn btn-primary mt-4 badge-pill" target="project">VISIT KIRABOFLIX</a>
+				</div>
+			</article>
 		</div>
 	</article>
 
+	<footer class="footer">
+		<div class="mb-3">
+			<h1 class="mb-2">Connect with me</h1>
+			<a href="https://www.linkedin.com/in/kirabo-ibrahim-b141121b5" target="_blank"><i class="fa-brands fa-github intro__social-icon intro__linkedin-icon"></i></a>
+			<a href="https://github.com/kiraboibrahim" target="_blank"><i class="fa-brands fa-linkedin intro__social-icon intro__github-icon"></i></a>
+		</div>
+		<div style="font-weight: bold;"> 2022 &copy; Kirabo Ibrahim</div>
+	</footer>
+
+	<a class="btn btn-danger badge-pill resume" href="https://rxresu.me/r/99nktk" target="_blank">RESUME</a>
 </body>
 </html>
