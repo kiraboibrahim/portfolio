@@ -1,0 +1,52 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+a:active {
+  outline: none;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+em {
+    font-weight: bold;
+}
+.intro-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+.intro__title {
+  margin-bottom: 10px;
+}
+.intro__name {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.intro__social-icons {
+  margin-top: 20px;
+}
+
+.intro__social-icon {
+  font-size: 33px;
+  margin-right: 10px;
+}
+
+.about {
+  padding: 5%;
+}
+
+.about__title {
+  font-size: 2em;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
