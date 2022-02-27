@@ -39,14 +39,69 @@ em {
   margin-right: 10px;
 }
 
-.about {
+.about,
+.skills,
+.projects {
   padding: 5%;
 }
 
-.about__title {
+.about__title,
+.skills__title,
+.projects__title {
   font-size: 2em;
   display: inline-block;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid black;
+}
+
+.skill {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.projects__project-card {
+  /*border: 1px solid #ededed;
+  box-shadow: 0 0 3px #ededed;
+  border-radius: 20px;*/
+  padding: 3%;
+}
+
+.projects__project-card-title {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.projects__project-card-body {
+  text-align: justify;
+  font-size: .9em;
+}
+
+.footer {
+  text-align: center;
+  padding: 3%;
+}
+
+.resume {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dc3545;
+    box-shadow: 0 0 5px #dc3545;
+  }
+  50% {
+    background-color: #dc3545;
+    box-shadow: 0 0 20px #dc3545;
+  }
+  100% {
+    background-color: #dc3545;
+    box-shadow: 0 0 5px #dc3545;
+  }
 }
